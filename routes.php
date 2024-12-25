@@ -1,0 +1,27 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+$route['default_controller'] = 'home';
+$route['404_override'] = 'home/error';
+$route['search'] = 'home/search';
+$route["photo-gallery"]="gallery/photo_gallery";
+$route["video-gallery"]="gallery/video_gallery";
+$route["vision-and-mission"]="about/vision_mission";
+$route["(:any).htm"]="home/error";
+$route["infrastructure"]="about/infrastructure";
+$route["presence"]="about/presence";
+$route["partners"]="about/partners";
+$route["bill-claim-in-(:any)"]="about/bill_claim/$1";
+$route["why-choose-us"]="about/choose";
+$route["verify-lr"]="about/verify_lr";
+$route["testimonials"]="about/testimonials";
+$route["our-gallery"]="gallery/photo_gallery";
+$route["home-shifting-services"]="services/home";
+$route["office-shifting-services"]="services/office";
+$route["car-shifting-services"]="services/car";
+$route["local-shifting-services"]="services/local";
+$route["healthcare-logistics"]="services/healthcare";
+$route["packing-and-unpacking"]="services/packing";
+$route["our-branches"]="packers_movers/branches";
+$route["(:any)-packers-and-movers"]="packers_movers/state_services/$1";
+$route["(:any)-packers-movers-in-(:any)"]="packers_movers/city/$1/$2";
+$route['translate_uri_dashes'] = TRUE;
